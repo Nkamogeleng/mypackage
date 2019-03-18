@@ -5,7 +5,7 @@ setup(
     version='0.1',
     packages=find_packages(exclude=['tests*']),
     license='MIT',
-    description='EDSA mypackage first time creating',
+    description='EDSA mypackage',
     long_description=open('README.md').read(),
     install_requires=['numpy'],
     url='https://github.com/<Nkamogeleng>/<mypackage>',
