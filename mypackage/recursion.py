@@ -5,10 +5,11 @@ def sum_array(array):
 
 def fibonacci(number):
 
-    if number == 0:
-        return 0
+    if n <= 1:
+        return n
+
     else:
-        return fibonacci(number - 2) + fibonacci(number - 1)
+        return fibonacci(n - 1) + fibonacci(n - 2)
 
 def factorial(n):
     '''Return n!'''
