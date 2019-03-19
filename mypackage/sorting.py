@@ -29,7 +29,7 @@ def merge_sort(items):
             k=k+1
 
         while i < len(lefthalf):
-            alist[k]=lefthalf[i]
+            items[k]=lefthalf[i]
             i=i+1
             k=k+1
 
