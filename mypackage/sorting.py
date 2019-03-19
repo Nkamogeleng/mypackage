@@ -37,7 +37,7 @@ def merge_sort(items):
             items[k]=righthalf[j]
             j=j+1
             k=k+1
-return items
+    return items
 
 def quick_sort(items, index=-1):
     len_i = len(items)
