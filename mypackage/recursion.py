@@ -6,10 +6,9 @@ def sum_array(array):
 def fibonacci(n):
 
     '''Return nth term in fibonacci sequence'''
-    a,b = 1,1
-    for i in range(n-1):
-        a,b = b, a+b
-    return a
+    if number <= 1:
+        return 1
+    return fibonacci(number - 2) + fibonacci(number - 1)
 
 def factorial(n):
     '''Return n!'''

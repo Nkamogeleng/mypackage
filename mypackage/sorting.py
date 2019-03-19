@@ -1,13 +1,12 @@
 def bubble_sort(items):
 
     '''Return array of items, sorted in ascending order'''
-    for item in range(len(items)-1,0,-1):
-        for i in range(item):
-            if items[i]>items[i+1]:
-                temp = items[i]
-                items[i] = items[i+1]
-                items[i+1] = temp
-    return items
+    out = items.copy() # in place protection on items
+    for i in range(len(out)):
+        for j in range(len(out)-1-i):
+            if out[j] > out[j+1]:
+                out[j], out[j+1] = out[j+1], out[j]     # Swap!
+    return out
 
 def mergeSort(items):
     if len(items)>1:
