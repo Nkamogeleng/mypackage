@@ -1,5 +1,4 @@
 def bubble_sort(items):
-
     '''Return array of items, sorted in ascending order'''
     out = items.copy() # in place protection on items
     for i in range(len(out)):
@@ -8,14 +7,14 @@ def bubble_sort(items):
                 out[j], out[j+1] = out[j+1], out[j]     # Swap!
     return out
 
-def mergeSort(items):
+def merge_sort(items):
     if len(items)>1:
         mid = len(items)//2
         lefthalf = items[:mid]
         righthalf = items[mid:]
 
-        mergeSort(lefthalf)
-        mergeSort(righthalf)
+        merge_sort(lefthalf)
+        merge_sort(righthalf)
 
         i=0
         j=0
@@ -42,10 +41,8 @@ return items
 
 def quick_sort(items, index=-1):
     len_i = len(items)
-
     if len_i <= 1:
         return items
-
     pivot = items[index]
     small = []
     large = []
@@ -57,8 +54,6 @@ def quick_sort(items, index=-1):
             large.append(i)
         elif i == pivot:
             dup.append(i)
-
     small = quick_sort(small)
     large = quick_sort(large)
-
     return small + dup + large

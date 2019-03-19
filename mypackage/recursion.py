@@ -3,12 +3,12 @@ def sum_array(array):
     '''Return sum of all items in array'''
     return sum(array)
 
-def fibonacci(n):
+def fibonacci(number):
 
-    '''Return nth term in fibonacci sequence'''
-    if number <= 1:
-        return 1
-    return fibonacci(number - 2) + fibonacci(number - 1)
+    if number == 0:
+        return 0
+    else:
+        return fibonacci(number - 2) + fibonacci(number - 1)
 
 def factorial(n):
     '''Return n!'''
