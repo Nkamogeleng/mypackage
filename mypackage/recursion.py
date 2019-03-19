@@ -3,7 +3,7 @@ def sum_array(array):
     '''Return sum of all items in array'''
     return sum(array)
 
-def fibonacci(number):
+def fibonacci(n):
 
     if n <= 1:
         return n
